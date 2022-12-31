@@ -24,8 +24,9 @@ const generateFunThing = async () => {
   return "Go to the park of summat m8"
 }
 
-app.get("/", (req, res) => {
-  res.send(generateFunThing());
+app.get("/", async (req, res) => {
+  const data = await generateFunThing()
+  res.send(data);
 });
 
 app.listen(5000, () => {
