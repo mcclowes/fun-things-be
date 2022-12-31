@@ -1,3 +1,11 @@
 # fun-things-be
 
-discord function
+discord bot
+
+## Running locally
+
+`node index.js`
+
+Visit
+
+`http://localhost:5000/`
