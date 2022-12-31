@@ -24,7 +24,9 @@ const generateFunThing = async () => {
   return "Go to the park of summat m8"
 }
 
-app.get("/", generateFunThing);
+app.get("/", (req, res) => {
+  res.send(generateFunThing());
+});
 
 app.listen(5000, () => {
   console.log("Running on port 5000.");
