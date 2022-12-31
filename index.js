@@ -3,7 +3,7 @@ const express = require("express");
 
 const app = express();
 
-const prefix = "Fun thing to do today: "
+const prefix = "Fun thing to do: "
 
 const randomItem = (items) => items[Math.floor(Math.random()*items.length)];
 
