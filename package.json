@@ -4,7 +4,7 @@
   "description": "testing stuff",
   "repository": {
     "type": "git",
-    "url": "git+"
+    "url": "git+https://github.com/mcclowes/fun-things-be.git"
   },
   "main": "index.js",
   "dependencies": {
