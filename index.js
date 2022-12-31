@@ -1,4 +1,7 @@
 const axios = require('axios');
+const express = require("express");
+
+const app = express();
 
 const prefix = "Fun thing to do: "
 
@@ -21,4 +24,13 @@ const generateFunThing = async () => {
   return "Go to the park of summat m8"
 }
 
-module.exports = generateFunThing
+app.get("/", (req, res) => {
+  res.send("Express on Vercel");
+});
+
+app.listen(5000, () => {
+  console.log("Running on port 5000.");
+});
+
+// Export the Express API
+module.exports = app;
