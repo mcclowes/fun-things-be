@@ -4,7 +4,7 @@ discord bot
 
 ## Running locally
 
-`node index.js`
+`npm run dev`
 
 Visit
 
